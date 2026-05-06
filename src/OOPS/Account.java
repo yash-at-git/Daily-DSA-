@@ -8,7 +8,7 @@ public class Account {
     }
 
     void deposit(double amount){
-        if(!isValid(amount)){
+        if(!isValid(amount)){ //checking if amout is valid or not
             System.out.println("invalid amount");
             return;
         }else{
@@ -19,7 +19,7 @@ public class Account {
     public void getBalance(){
         System.out.println("Balance : "+balance);
     }
-    private boolean isValid(double amount){
+    private boolean isValid(double amount) {
         return amount > 0;
     }
 }
